@@ -36,8 +36,8 @@ implementation
 
 procedure TfrmSendLine.btnSendClick(Sender: TObject);
 begin
-
-  LineNotify1.Send(txtToken.Text,'test',OpenPictureDialog1.FileName);
+ if OpenPictureDialog1.Execute then
+  LineNotify1.Send(txtToken.Text,'test',OpenPictureDialog1.FileName,1,1);
 end;
 
 end.

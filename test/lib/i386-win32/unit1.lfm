@@ -1,20 +1,36 @@
-object Form1: TForm1
-  Left = 317
+object frmSendLine: TfrmSendLine
+  Left = 362
   Height = 240
-  Top = 154
-  Width = 320
-  Caption = 'Form1'
+  Top = 147
+  Width = 479
+  Caption = 'frmSendLine'
   ClientHeight = 240
-  ClientWidth = 320
-  LCLVersion = '2.0.6.0'
-  object Button1: TButton
-    Left = 47
+  ClientWidth = 479
+  LCLVersion = '2.0.8.0'
+  object btnSend: TButton
+    Left = 48
     Height = 25
-    Top = 68
+    Top = 96
     Width = 75
-    Caption = 'Button1'
-    OnClick = Button1Click
+    Caption = 'Send'
+    OnClick = btnSendClick
     TabOrder = 0
+  end
+  object txtToken: TEdit
+    Left = 48
+    Height = 23
+    Top = 32
+    Width = 230
+    TabOrder = 1
+    Text = 'txtToken'
+  end
+  object txtMsg: TEdit
+    Left = 48
+    Height = 23
+    Top = 64
+    Width = 230
+    TabOrder = 2
+    Text = 'txtMsg'
   end
   object LineNotify1: TLineNotify
     URLNotify = 'https://notify-api.line.me/api/notify'
@@ -24,7 +40,11 @@ object Form1: TForm1
     URLrevoke = 'https://notify-api.line.me/api/revoke'
     URLaccessToken = 'https://notify-bot.line.me/my/'
     URLaccessService = 'https://notify-bot.line.me/my/services/'
-    left = 53
-    top = 26
+    left = 192
+    top = 144
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    left = 72
+    top = 144
   end
 end

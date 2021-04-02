@@ -1,7 +1,7 @@
 object frmSendLine: TfrmSendLine
-  Left = 317
+  Left = 362
   Height = 240
-  Top = 154
+  Top = 147
   Width = 479
   Caption = 'frmSendLine'
   ClientHeight = 240
