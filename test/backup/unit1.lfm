@@ -1,0 +1,50 @@
+object frmSendLine: TfrmSendLine
+  Left = 317
+  Height = 240
+  Top = 154
+  Width = 479
+  Caption = 'frmSendLine'
+  ClientHeight = 240
+  ClientWidth = 479
+  LCLVersion = '2.0.8.0'
+  object btnSend: TButton
+    Left = 48
+    Height = 25
+    Top = 96
+    Width = 75
+    Caption = 'Send'
+    OnClick = btnSendClick
+    TabOrder = 0
+  end
+  object txtToken: TEdit
+    Left = 48
+    Height = 23
+    Top = 32
+    Width = 230
+    TabOrder = 1
+    Text = 'txtToken'
+  end
+  object txtMsg: TEdit
+    Left = 48
+    Height = 23
+    Top = 64
+    Width = 230
+    TabOrder = 2
+    Text = 'txtMsg'
+  end
+  object LineNotify1: TLineNotify
+    URLNotify = 'https://notify-api.line.me/api/notify'
+    URLAuthentication = 'https: //notify-bot.line.me/oauth/authorize'
+    URLtoken = 'https://notify-bot.line.me/oauth/token'
+    URLstatus = 'https://notify-api.line.me/api/status'
+    URLrevoke = 'https://notify-api.line.me/api/revoke'
+    URLaccessToken = 'https://notify-bot.line.me/my/'
+    URLaccessService = 'https://notify-bot.line.me/my/services/'
+    left = 192
+    top = 144
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    left = 72
+    top = 144
+  end
+end
