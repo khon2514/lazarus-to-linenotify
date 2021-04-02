@@ -27,3 +27,6 @@ end;
 
 line sticker id ดูได้จากลิ้งค์นี้
 https://developers.line.biz/media/messaging-api/sticker_list.pdf
+
+Component ที่เกี่ยวข้อง  indy 10
+
