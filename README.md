@@ -15,6 +15,7 @@ procedure TfrmSendLine.btnSendClick(Sender: TObject);
 begin
 
   LineNotify1.Send(tokenid,'ข้อความ','ไฟล์รูปภาพ',1,1);
+  
 end;
 
 การส่ง line notify 
